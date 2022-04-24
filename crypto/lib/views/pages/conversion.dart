@@ -1,3 +1,4 @@
+// ignore_for_file: file_names
 import 'package:crypto/models/coin.dart';
 import 'package:crypto/views/pages/home.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +20,7 @@ TextEditingController bitCoinNumberController =
     TextEditingController(text: "1");
 
 class Conversion extends StatefulWidget {
-  Conversion({Key? key}) : super(key: key);
+  const Conversion({Key? key}) : super(key: key);
 
   @override
   State<Conversion> createState() => _ConversionState();
@@ -34,7 +35,7 @@ class _ConversionState extends State<Conversion> {
       Navigator.push(
         context,
         MaterialPageRoute(builder: (builder) {
-          return Conversion();
+          return const Conversion();
         }),
       );
     });
@@ -48,7 +49,7 @@ class _ConversionState extends State<Conversion> {
       Navigator.push(
         context,
         MaterialPageRoute(builder: (builder) {
-          return Conversion();
+          return const Conversion();
         }),
       );
     });
@@ -62,7 +63,7 @@ class _ConversionState extends State<Conversion> {
       Navigator.push(
         context,
         MaterialPageRoute(builder: (builder) {
-          return Conversion();
+          return const Conversion();
         }),
       );
     });
